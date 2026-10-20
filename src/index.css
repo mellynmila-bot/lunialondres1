@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Gilda Display', Georgia, serif;
+  --font-sans: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --color-marfim: #F6EFE4;
+  --color-bege: #EADFCC;
+  --color-areia: #D9C7AC;
+  --color-mocha: #8B6B52;
+  --color-marrom-profundo: #4A3727;
+  --color-gold: #C29F5B;
+  --color-gold-light: #E6CF9A;
+  --color-gold-dark: #8F7030;
+  --color-text-light: #3F2E22;
+  --color-text-mocha: #F6EFE4;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-serif);
+}
+
+/* Arch Frame geometry: semicircular top, flat bottom */
+.arch-frame {
+  border-radius: 9999px 9999px 0 0;
+}
+
+/* Shimmer beam effect */
+@keyframes shimmer-sweep {
+  0% { transform: translateX(-100%) rotate(25deg); opacity: 0; }
+  30% { opacity: 0.6; }
+  60% { opacity: 0.6; }
+  100% { transform: translateX(250%) rotate(25deg); opacity: 0; }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmer-sweep 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Star twinkle */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.85); }
+  50% { opacity: 0.9; transform: scale(1.2); }
+}
+
+.animate-twinkle {
+  animation: twinkle 3.5s ease-in-out infinite;
+}
+
+/* Infinite Marquee Carousel for Gallery */
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-infinite {
+  display: flex;
+  width: max-content;
+  animation: marquee-infinite 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-infinite:hover,
+.animate-marquee-infinite:focus-within {
+  animation-play-state: paused;
+}

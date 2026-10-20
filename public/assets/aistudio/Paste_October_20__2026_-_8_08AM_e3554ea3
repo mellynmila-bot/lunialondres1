@@ -1,0 +1,343 @@
+PRD – Site One Page Institucional: Lúnia Aesthetics (@lunia.aesthetics)
+Cliente: Lúnia Aesthetics – Aesthetic Practitioner (Advanced Aesthetics & Skin Treatments • Skin Health • Brows • Natural Results) Tipo: Site one page institucional, elegante, sofisticado e otimizado para Google e IAs Idiomas: Português do Brasil (padrão) + opção de ler em inglês no cabeçalho Agendamento: pela DM do Instagram ou pelo WhatsApp (duas opções) Destino: Google AI Studio (gerar o site completo a partir deste documento)
+1. Instrução principal para a IA
+Crie um site one page institucional para Lúnia Aesthetics, praticante de estética avançada em Bournemouth, Reino Unido 🇬🇧, especializada em saúde da pele, sobrancelhas e resultados naturais (preenchimento labial, Premium Repair Brows e Brow Lamination). Ela é estudante de Biomedicina (BSc), o que reforça a abordagem científica. O site deve transmitir delicadeza, ciência, naturalidade e sofisticação. Use React + Tailwind CSS + Framer Motion (ou HTML/CSS/JS puro com IntersectionObserver), 100% responsivo (mobile-first, o público vem do Instagram). Entregue o site completo e funcional, com todas as seções abaixo na ordem indicada.
+Regras de ouro
+1. Toda seção tem título + subtítulo de impacto (copy que cria conexão) e um botão de agendar.
+2. Todo botão “Agendar” abre um seletor elegante com as duas opções: Instagram DM ou WhatsApp (ver 5.1).
+3. Todos os links de imagem devem ser usados exatamente como estão neste PRD.
+4. Site em português com opção de inglês no cabeçalho.
+5. SEO interno completo, pensado para Google e para IAs recomendarem (seção 8).
+6. Linguagem responsável de estética: sem promessas absolutas (“garantido”, “100%”, “sem risco”). Sempre “resultados variam de pessoa para pessoa” e “após avaliação personalizada”. Tratamentos apenas para maiores de 18 anos.
+7. Serviços sem preços (valores confirmados na avaliação).
+2. Identidade visual
+Tema: Lúnia remete à lua. Usar discretamente o símbolo de lua crescente dourada como ornamento (divisores, logo, favicon), com brilho suave.
+Paleta (bege claro, dourado, marrom claro)
+• Marfim #F6EFE4 (fundo principal) e bege #EADFCC
+• Areia #D9C7AC
+• Marrom claro (mocha) #8B6B52 (seções de contraste, texto marfim)
+• Marrom profundo #4A3727 (títulos sobre claro e rodapé)
+• Dourado #C29F5B (principal), dourado claro #E6CF9A (brilho), dourado antigo #8F7030
+• Texto sobre claro: #3F2E22; sobre mocha: #F6EFE4
+Alternância de fundos
+#
+Seção
+Fundo
+1
+Hero
+Marfim com brilho dourado
+2
+Serviços
+Marrom claro (mocha)
+3
+Galeria
+Marfim
+4
+Sobre
+Bege
+5
+Instagram e Grupo VIP
+Marrom claro (mocha)
+6
+Feedbacks
+Marfim
+7
+Studio e localização
+Bege
+8
+Agendamento
+Marrom claro (mocha)
+9
+FAQ
+Marfim
+10
+Rodapé
+Marrom profundo
+Estilo
+• Fotos principais em formato de arco (topo semicircular, base reta), obrigatório no Hero, repetido no Sobre. Borda dourada fina e segunda linha dourada deslocada.
+• Detalhes de brilho: feixe de luz dourado lento sobre molduras e botões, pequenos sparkles/estrelas discretos (mais nas seções mocha), halo dourado suave atrás do arco do hero.
+• Cards com cantos suaves (6–8px), borda fina dourada, fundo claro semitransparente.
+• Divisores de seção: linha dourada fina com lua crescente central.
+• Botões: primário dourado preenchido (texto marrom profundo), secundário com contorno dourado. Brilho deslizante no hover.
+• Muito espaço em branco, ritmo editorial.
+Tipografia (Google Fonts)
+• Títulos: Gilda Display (palavras-chave em dourado antigo)
+• Corpo e botões: Nunito Sans (rótulos em maiúsculas pequenas, espaçadas)
+• Logo (texto): “LÚNIA” em serifada espaçada com lua crescente dourada + “AESTHETICS” pequeno.
+3. Animações
+• Cada seção entra com fade-in + slide-up (uma vez), conteúdo interno em cascata.
+• Linhas e molduras douradas que se desenham ao entrar.
+• Hero: título linha a linha, arco com leve parallax e brilho pulsando de forma suave.
+• Navbar transparente no topo, vira marfim com borda dourada ao rolar.
+• Hover: zoom suave nas fotos, elevação nos cards.
+• prefers-reduced-motion respeitado; scroll suave.
+4. Idiomas (PT-BR + EN)
+• Padrão: português (BR). No cabeçalho, seletor PT | EN visível, em pílula com borda dourada (“Read in English” / “Ler em português”), também no menu mobile.
+• Troca instantânea de todo o conteúdo sem recarregar, via translations.pt / translations.en, escolha em localStorage (com try/catch), <html lang> dinâmico (pt-BR / en-GB).
+• Textos PT deste PRD são a versão final. Em EN, usar as versões dadas (inclusive o texto original em inglês do Premium Repair, que está na seção 6.2) e traduzir fielmente o restante.
+• Texto legal de registro, contato e modais (Privacy Policy e Terms of Use) sempre em inglês.
+5. Dados, links e agendamento
+• Instagram: https://www.instagram.com/lunia.aesthetics/
+• DM do Instagram (agendar): https://ig.me/m/lunia.aesthetics
+• WhatsApp (agendar): https://wa.me/[WHATSAPP_NUMBER]?text=<mensagem>. ⚠️ O número não foi informado: criar o campo whatsappPhone em siteData (formato internacional, ex.: 44XXXXXXXXXX, sem 0 depois do 44). Se vazio, esconder a opção WhatsApp e mostrar só a DM.
+• Grupo VIP no WhatsApp (modelos, condições especiais, novidades e abertura de agenda): https://chat.whatsapp.com/Czo0YvVfH5jLgDqAgUACQz?s=cl&p=i&mlu=4&ilr=4&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgRzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAafb9u7U56c1vIw2lvx0_dAa3n4Fu83xwOEdg4iIYPgvsFQZ0qxt8EJAL1Knew_aem_mFbjjqRtg7acGAdZaM-22w
+• Localização: Bournemouth, Reino Unido. (O Instagram diz “Bournemouth, London UK”; usar Bournemouth, UK.) Endereço completo em studioAddress (opcional) com chave showAddress (padrão false).
+• Reel (Instagram): https://www.instagram.com/reel/DdMYLjftf0k/
+• Reel do espaço: https://www.instagram.com/reel/DdCN9NNtvwd/
+Tudo em um único objeto siteData.
+5.1 Seletor de agendamento (todos os botões “Agendar”)
+Ao clicar em qualquer botão de agendar, abre um modal elegante (ou bottom sheet no mobile), título Como prefere agendar? (EN: How would you like to book?) com dois cards:
+• Instagram DM: Envie uma mensagem para @lunia.aesthetics. → abre https://ig.me/m/lunia.aesthetics. Como a DM não aceita texto pré-preenchido, copiar para a área de transferência a mensagem padrão (navigator.clipboard, fallback com caixa selecionável) e mostrar Mensagem copiada! Cole na conversa.
+• WhatsApp: Fale direto no WhatsApp. → abre https://wa.me/[WHATSAPP_NUMBER]?text= com mensagem pré-pronta (encodeURIComponent).
+Mensagem padrão (PT): Olá, Lúnia! 💛 Vi o seu site e gostaria de agendar uma avaliação. (EN: translate) Botão do formulário (seção 6.8) usa o mesmo modal, mas com a mensagem completa. Acessível (foco preso, Esc fecha).
+6. Seções (na ordem)
+Navbar (fixa)
+• Logo textual com lua dourada.
+• Links: Tratamentos · Galeria · Sobre · Instagram · Avaliações · Studio · FAQ (EN: Treatments · Gallery · About · Instagram · Reviews · Studio · FAQ)
+• Seletor PT | EN e botão dourado Agendar (abre o seletor 5.1).
+• Mobile: hambúrguer com painel marfim.
+6.1 Hero
+Layout: duas colunas; texto à esquerda; foto dela à direita em arco (topo arredondado), com borda dourada, halo de brilho e sparkles. Foto: https://i.ibb.co/8Dx1Dj31/Save-Clip-App-825325912-18629663617017732-8901580188990407471-n-1.webp
+• Eyebrow: ADVANCED AESTHETICS & SKIN TREATMENTS • BOURNEMOUTH
+• Título: Realce o que já é seu, com ciência, delicadeza e naturalidade (EN: Enhance what is already yours, with science, gentleness and natural results)
+• Subtítulo: Estética avançada, saúde da pele e sobrancelhas em Bournemouth. Avaliação personalizada, resultados naturais e cuidado em cada detalhe. (EN: Advanced aesthetics, skin health and brows in Bournemouth. Personalised assessment, natural results and care in every detail.)
+• Chips: Skin Health · Brows · Natural Results
+• Botões: Agendar minha avaliação · Ver tratamentos (#servicos)
+Cards (cantos suaves, borda dourada, ícone fino):
+• 📍 Bournemouth, Reino Unido
+• 🧬 Abordagem científica: estudante de Biomedicina (BSc)
+• 🌿 Resultados naturais após avaliação personalizada
+6.2 Serviços (nome, foto e descrição)
+• Título: Tratamentos pensados para valorizar, não transformar (EN: Treatments designed to enhance, not to change)
+• Subtítulo: Cada plano nasce de uma avaliação individual, para um resultado harmónico, seguro e com a sua cara. (EN: Every plan starts with an individual assessment, for a harmonious, safe result that looks like you.)
+Layout: 3 cards grandes (empilham no mobile), cada um com foto no topo em arco pequeno com moldura dourada, nome, descrição, sem preço (chip dourado: Valor na avaliação / Price at assessment) e botão Agendar avaliação. O card do Premium Repair tem “Ler mais” que expande o texto completo.
+⚠️ As fotos dos serviços reaproveitam as da galeria (não foram indicadas fotos específicas). Guardar em siteData.services[i].image para troca fácil e confirmar com a Lúnia qual foto representa cada tratamento.
+Card 1: Premium Repair Brows · Foto: https://i.ibb.co/4qvPk6W/Remove-the-text-2-K-20261019153159.webp
+• Resumo PT: As sobrancelhas mudam ao longo dos anos. O Premium Repair foi desenvolvido para nutrir a saúde dos folículos e criar um ambiente que favorece o fortalecimento e o crescimento dos fios.
+• Texto completo PT (ao expandir): Envelhecimento, alterações hormonais, excesso de modelagem, depilações frequentes, estresse e até fatores genéticos podem deixar os fios mais finos e fracos, e algumas áreas perderem densidade. O tratamento combina técnicas específicas com ativos de alta performance para: fortalecer fios enfraquecidos; estimular a renovação na região das sobrancelhas; melhorar a qualidade e a espessura dos fios; recuperar sobrancelhas danificadas pelo excesso de pinça; auxiliar quem deseja sobrancelhas mais cheias e naturais. ✨ Importante: os resultados variam de pessoa para pessoa. O crescimento de novos fios depende da presença de folículos ativos e da resposta biológica de cada pessoa. Por isso, a avaliação inicial é essencial. Sobrancelhas bonitas começam com sobrancelhas saudáveis. 💚 📍 Bournemouth
+• Texto original em EN (usar quando o idioma for EN): Our eyebrows change over the years. Due to aging, hormonal changes, over-shaping, frequent hair removal, stress, and even genetic factors, it is common for brow hairs to become thinner and weaker, and for some areas to lose density. Premium Repair was developed to nurture follicle health and create an environment that fosters hair strengthening and growth. The treatment combines specific techniques with high-performance active ingredients to: strengthen weakened hairs; stimulate renewal in the brow area; improve hair quality and thickness; restore eyebrows damaged by over-plucking; assist those desiring fuller, more natural-looking eyebrows. Important: Results vary from person to person. New hair growth depends on the presence of active follicles and each individual’s biological response. Therefore, an initial assessment is essential. Beautiful eyebrows start with healthy eyebrows. 💚 Book your assessment and discover the recovery potential of your eyebrows.
+Card 2: Brow Lamination · Foto: https://i.ibb.co/6cwjhvRQ/Remove-the-text-2-K-20261019153152.webp
+• PT: Alinha e disciplina os fios na direção desejada, criando sobrancelhas mais preenchidas, penteadas e definidas, com acabamento natural. Indicada após avaliação do tipo de fio e da sua pele.
+• EN: Aligns and sets the hairs in the desired direction for fuller, brushed-up, defined brows with a natural finish. Recommended after assessing your hair type and skin.
+• Nota: o texto original do cliente diz “brown lamination”; interpretado como Brow Lamination.
+Card 3: Preenchimento labial / Lip Filler · Foto: https://i.ibb.co/G4WC8Kf7/Save-Clip-App-806428516-2745416732539676-2747887176779661427-n.webp
+• PT: Realce delicado e proporcional dos lábios, com foco em naturalidade, harmonia e definição. O plano é desenhado após avaliação do seu rosto, das suas proporções e do resultado que deseja. Apenas para maiores de 18 anos.
+• EN: A delicate, proportionate enhancement of the lips, focused on naturalness, harmony and definition. Your plan is designed after assessing your face, proportions and the result you want. 18+ only.
+Nota geral (pequena, sob os cards): Todos os tratamentos exigem avaliação inicial, consentimento informado e discussão de riscos e cuidados. Os resultados variam de pessoa para pessoa. (EN: translate)
+Botão da seção: Agendar minha avaliação.
+6.3 Galeria
+• Título: Delicadeza que se vê nos detalhes (EN: Delicacy you can see in the details)
+• Subtítulo: Resultados naturais, pensados para cada rosto. (EN: Natural results, designed for every face.)
+4 fotos em grid (2×2, ou 4 em linha no desktop largo), moldura dourada com topo em arco suave, hover com zoom. Lightbox ao clicar: tela cheia, setas esquerda/direita, X, contador (“2 / 4”), teclado e swipe.
+Fotos (4):
+1. https://i.ibb.co/4qvPk6W/Remove-the-text-2-K-20261019153159.webp
+2. https://i.ibb.co/6cwjhvRQ/Remove-the-text-2-K-20261019153152.webp
+3. https://i.ibb.co/G4WC8Kf7/Save-Clip-App-806428516-2745416732539676-2747887176779661427-n.webp
+4. https://i.ibb.co/pBqJs0VT/Save-Clip-App-840287472-18633375154017732-3052411367797647228-n.webp
+Nota pequena: Resultados individuais podem variar. Botão: Quero um resultado natural (seletor 5.1).
+6.4 Sobre a profissional
+Layout: duas colunas; foto dela em arco com moldura dourada e brilho; ao lado, título, frase e parágrafos. Foto: https://i.ibb.co/8Dx1Dj31/Save-Clip-App-825325912-18629663617017732-8901580188990407471-n-1.webp
+• Título: Conheça a Lúnia (EN: Meet Lúnia)
+• Subtítulo: Onde a ciência encontra o cuidado e a beleza natural. (EN: Where science meets care and natural beauty.)
+• Frase (serifada itálica, aspas douradas): “Beleza natural não é fazer menos, é fazer com critério. Quero que você se olhe no espelho e se reconheça, só que mais confiante.” — Lúnia (EN: “Natural beauty isn’t doing less, it’s doing it with care. I want you to look in the mirror and recognise yourself, just more confident.”)
+• Parágrafo 1 (emocional, beleza e autoestima): Para a Lúnia, a beleza começa na forma como você se sente. Cada pessoa chega com uma história, uma insegurança ou um desejo, e o atendimento é um espaço de escuta, acolhimento e respeito pelos seus traços. O objetivo não é mudar quem você é, e sim realçar o que já é lindo e devolver a confiança no seu próprio olhar.
+• Parágrafo 2 (técnico): Com mais de 3 anos de experiência em estética avançada e tratamentos para a pele e sobrancelhas, a Lúnia une técnica e conhecimento científico, reforçado pela sua formação em Biomedicina (BSc, em curso). Cada plano começa com uma avaliação individual, com foco em saúde da pele, segurança, naturalidade e protocolos rigorosos de higiene.
+• Indicadores animados: +3 anos de experiência · BSc Biomedicina (em curso) · Saúde da pele & Sobrancelhas · Resultados naturais
+Botão: Agendar com a Lúnia.
+6.5 Instagram e Grupo VIP
+• Título: Acompanhe a Lúnia por trás da cena (EN: Follow Lúnia behind the scenes)
+• Subtítulo: Tratamentos, dicas de cuidado e novidades, tudo no Instagram. (EN: Treatments, care tips and news, all on Instagram.)
+• Avatar com anel dourado, @lunia.aesthetics, botão Seguir no Instagram (nova aba).
+• Reel integrado, reproduzível no site: https://www.instagram.com/reel/DdMYLjftf0k/ via embed oficial (iframe https://www.instagram.com/reel/DdMYLjftf0k/embed), centralizado, moldura dourada, largura máx. ~400px. Sem capa, thumbnail ou imagem de pré-visualização personalizada.
+• Card Grupo VIP (destaque dourado, ícone de estrela), lateral ao reel no desktop: Entre no Grupo VIP (EN: Join the VIP Group) — Receba em primeira mão: oportunidades para modelos, condições especiais, novidades e abertura de agenda. (EN: Get first access to model opportunities, special offers, news and new appointment openings.) Botão Entrar no Grupo VIP → link do Grupo VIP (nova aba).
+Botões: Seguir @lunia.aesthetics · Agendar.
+6.6 Feedbacks (6, com 5 estrelas)
+• Título: Quem vive, sente a diferença (EN: Those who experience it feel the difference)
+• Subtítulo: Palavras de quem confiou a Lúnia o seu cuidado. (EN: Words from those who trusted Lúnia with their care.)
+Grid 3×2 (desktop) ou carrossel (mobile), cards com borda dourada, 5 estrelas douradas, aspas decorativas, texto, nome e tratamento.
+⚠️ Todos são textos de exemplo. Substituir por avaliações reais, com autorização das clientes. Nunca publicar depoimentos fictícios no site final.
+#
+Nome
+Tratamento
+Depoimento
+1
+Camila R.
+Preenchimento labial
+“Ficou natural, na medida certa. Me explicou tudo com calma e me senti segura.”
+2
+Sophie M.
+Premium Repair Brows
+“Atendimento muito cuidadoso. Gostei de entender o processo desde a avaliação.”
+3
+Fernanda L.
+Brow Lamination
+“Minhas sobrancelhas ficaram penteadas e definidas, do jeito que eu queria.”
+4
+Juliana P.
+Avaliação
+“Ambiente lindo, acolhedor e super profissional. Recomendo.”
+5
+Emma T.
+Preenchimento labial
+“She listened to what I wanted and kept everything natural. Lovely experience.”
+6
+Mariana S.
+Premium Repair Brows
+“Cuidado, delicadeza e muita transparência sobre o que esperar. Adorei.”
+Botão: Quero viver essa experiência.
+6.7 Studio e localização
+• Título: Um espaço criado para você se sentir segura e acolhida (EN: A space created for you to feel safe and welcome)
+• Subtítulo: Higiene, tecnologia, privacidade e conforto, no coração de Bournemouth. (EN: Hygiene, technology, privacy and comfort, in the heart of Bournemouth.)
+• Cards (cantos suaves, borda dourada, ícone fino), grid 3×2:
+    ◦ Segurança e higiene: protocolos rigorosos e materiais higienizados.
+    ◦ Tecnologia e produtos de qualidade: ativos e equipamentos de alta performance.
+    ◦ Privacidade: atendimento reservado, um cliente por vez.
+    ◦ Conforto: ambiente calmo e acolhedor.
+    ◦ Ótima localização: Bournemouth, de fácil acesso (confirmar transporte e estacionamento).
+    ◦ Avaliação personalizada: um plano feito para o seu rosto e a sua pele.
+• Reel do espaço integrado: https://www.instagram.com/reel/DdCN9NNtvwd/ via embed oficial (iframe https://www.instagram.com/reel/DdCN9NNtvwd/embed), moldura dourada, largura máx. ~400px. Sem capa nem imagem de pré-visualização personalizada.
+• Mapa: <iframe> do Google Maps (https://www.google.com/maps?q=Bournemouth,+United+Kingdom&z=12&output=embed), largura total, moldura dourada, loading="lazy", altura 380–450px. Se showAddress for true, mostrar o card de endereço e o botão Como chegar; se false, mostrar o aviso: O endereço exato é enviado após a confirmação do agendamento.
+• Transparência (opcional, só exibe se preenchido em siteData): Qualificações: [ ] · Seguro de responsabilidade: [ ] · Registro profissional: [ ].
+Botão: Agendar minha visita.
+6.8 Agendamento + educação
+• Título: O seu primeiro passo para um resultado natural (EN: Your first step to a natural result)
+• Subtítulo: Conte-nos o que deseja e a Lúnia prepara a sua avaliação com todo o cuidado. (EN: Tell us what you want and Lúnia will prepare your assessment with care.)
+Layout em 2 colunas (fundo mocha, cards marfim com borda dourada). Esquerda: cards educativos. Direita: mini formulário.
+Antes de agendar (cards educativos, ícones finos):
+• 🔍 A avaliação inicial é essencial: cada plano é definido após conhecer a sua pele, os seus traços e a sua história.
+• 📝 Conte a sua expectativa: o que deseja e o resultado que imagina.
+• 📸 Foto de referência: se tiver, envie na conversa para alinhar o estilo.
+• 🩺 Saúde primeiro: informe alergias, medicações, gravidez ou amamentação e condições de pele.
+• 🔞 Apenas para maiores de 18 anos.
+• 🌿 Resultados variam de pessoa para pessoa, e a Lúnia explica tudo com transparência.
+⚠️ Orientações de exemplo: a Lúnia deve confirmar o que orienta antes de cada tratamento.
+Mini formulário (sem <form>, usar onClick/onChange):
+• Como gostaria de ser chamada(o)? (texto)
+• Tratamento de interesse (Preenchimento labial · Premium Repair Brows · Brow Lamination · Ainda não sei, quero avaliação)
+• Melhor dia e horário (texto ou seleção de dia + período)
+• Qual a sua expectativa? (texto)
+• É a sua primeira vez neste tratamento? (Sim / Não)
+• Algo que devemos saber? (alergias, medicações, gravidez; opcional)
+Botão: Enviar a minha solicitação → abre o seletor 5.1 (Instagram DM ou WhatsApp) com a mensagem completa:
+Olá, Lúnia! 💛 Vi o seu site e gostaria de agendar uma avaliação. Nome: {nome} Tratamento: {tratamento} Melhor dia e horário: {horário} Expectativa: {expectativa} Primeira vez: {sim/não} Observações: {obs} (EN: traduzir naturalmente)
+Frase de fecho: Quanto mais detalhes você enviar, mais personalizada será a sua avaliação. Link secundário discreto: Entrar no Grupo VIP (novidades e abertura de agenda).
+6.9 FAQ (accordion animado, borda dourada)
+• Título: Perguntas frequentes (EN: Frequently asked questions)
+• Subtítulo: Tudo o que você precisa saber antes de agendar. (EN: Everything you need to know before booking.)
+1. Como faço para agendar? Pela DM do Instagram ou pelo WhatsApp. Preencha o mini formulário para enviar tudo já organizado.
+2. Preciso fazer avaliação antes? Sim. A avaliação inicial é essencial para definir se o tratamento é indicado e planear o resultado.
+3. O que é o Premium Repair Brows? Um tratamento que combina técnicas específicas com ativos de alta performance para apoiar a saúde dos folículos e o fortalecimento dos fios das sobrancelhas.
+4. O Premium Repair garante novos fios? Não. Os resultados variam. O crescimento depende de folículos ativos e da resposta biológica de cada pessoa.
+5. O que é Brow Lamination? Técnica que alinha e disciplina os fios, para sobrancelhas mais preenchidas, penteadas e definidas.
+6. O preenchimento labial fica natural? O objetivo é sempre harmonia e proporção, definidos na avaliação conforme o seu rosto e os seus desejos.
+7. Há idade mínima? Sim. Tratamentos apenas para maiores de 18 anos.
+8. Quais cuidados devo ter antes e depois? A Lúnia explica tudo na avaliação e envia as orientações de cuidados para cada tratamento.
+9. Quanto custa? O valor é confirmado na avaliação, conforme o tratamento e o seu plano.
+10. Onde fica o studio? Em Bournemouth, Reino Unido.
+11. O que é o Grupo VIP? Um grupo no WhatsApp com oportunidades para modelos, condições especiais, novidades e abertura de agenda.
+12. E se eu precisar remarcar ou cancelar? Avise o quanto antes. (Política a confirmar pela Lúnia.)
+Botão final: Agendar minha avaliação.
+6.10 Rodapé (UK, minimalista e discreto)
+Visual: fundo marrom profundo, linha dourada fina no topo, tipografia pequena (text-xs/text-sm), marfim com ~70% de opacidade (muted, legível), centralizado, arejado, ótima leitura no celular e no desktop.
+• Linha 1: logo textual + ícone Instagram + botão discreto Agendar.
+• Linha 2 (copyright): © 2026 [Nome do Negócio]. Todos os direitos reservados. (EN: All rights reserved.)
+• Linha 3 (registro legal, em inglês):
+    ◦ Opção A: [Full Name] is a sole trader registered in the United Kingdom.
+    ◦ Opção B: [Company Name Ltd], Company Registration Number: [XXXXXX], Registered Office: [Address]. Deixar as duas em siteData, exibindo só a ativa.
+• Linha 4 (contato obrigatório): Contact: [E-mail]
+• Linha 5 (links que abrem modais na mesma página): Privacy Policy · Terms of Use (separados por ponto dourado).
+• Linha pequena: Treatments for adults (18+) only.
+6.11 Modais legais (em inglês, janelas flutuantes)
+Modal elegante: fundo marfim, borda dourada, botão X, Esc e clique fora fecham, rolagem interna, foco preso (acessível).
+⚠️ Texto-modelo. Deve ser revisado pela profissional (e, de preferência, por um jurídico) antes de publicar.
+Privacy Policy (UK GDPR / Data Protection Act 2018):
+• Controller: [Name/Company], [E-mail].
+• Data we collect: name, contact details, treatment of interest, availability, messages sent via the booking form, Instagram DM or WhatsApp; health information you choose to share (allergies, medications, pregnancy, skin conditions), which is special-category data; photos only with consent.
+• Why and lawful basis: to respond to enquiries and provide treatments (contract/pre-contract steps), to keep safe treatment records (legitimate interests/legal obligation), and explicit consent for health data and before-and-after photos.
+• Sharing: Instagram (Meta), WhatsApp (Meta) and Google Maps; never sold.
+• Retention: [retention period], then deleted securely.
+• Your rights: access, rectification, erasure, restriction, portability, objection, withdraw consent.
+• Complaints: the Information Commissioner’s Office (ico.org.uk).
+• Cookies: embeds from Instagram and Google Maps may set cookies.
+Terms of Use:
+• Website content is general and not medical advice; treatments require an initial assessment, informed consent and suitability check.
+• 18+ only. Clients must disclose relevant health information honestly.
+• Results vary and are not guaranteed; risks and aftercare are explained at assessment.
+• Prices confirmed at assessment; booking, cancellation and lateness policy: [to be confirmed by the practitioner].
+• Intellectual property of site content; liability limited to the extent permitted by law (nothing excludes liability for death or personal injury caused by negligence); governing law: England and Wales.
+6.12 Aviso de cookies (PECR, recomendado)
+• Banner discreto, borda dourada (PT/EN): Aceitar · Recusar não essenciais.
+• Sem consentimento, não carregar os embeds de terceiros (Instagram e Google Maps): caixa neutra, sem imagem e sem capa, com Aceite os cookies para ver este conteúdo e botão Aceitar e ver. Escolha em localStorage (com try/catch) e link “Cookie settings” no rodapé.
+7. Botão flutuante
+Canto inferior direito, dourado, ícone de lua/calendário e texto Agendar, com brilho suave, visível após o hero. Abre o seletor 5.1.
+8. SEO interno (Google + IAs)
+Técnico
+• <html lang> dinâmico; âncoras #servicos, #galeria, #sobre, #instagram, #avaliacoes, #studio, #agendamento, #faq.
+• Title PT: “Lúnia Aesthetics | Estética Avançada, Sobrancelhas e Preenchimento Labial em Bournemouth”. Title EN: “Lúnia Aesthetics | Advanced Aesthetics, Brow Treatments & Lip Filler in Bournemouth”.
+• Meta description PT (~155 car.): “Estética avançada em Bournemouth: Premium Repair Brows, Brow Lamination e preenchimento labial com resultados naturais. Agende a sua avaliação.” EN equivalente.
+• Um único <h1>, <h2> por seção, HTML semântico, alt descritivo bilíngue, loading="lazy" (exceto hero), width/height, Open Graph e Twitter Card (foto do hero), canonical, hreflang pt-BR / en-GB.
+• Favicon: lua crescente dourada sobre marfim (ou a foto dela recortada), apple-touch-icon 180×180.
+• Arquivos: robots.txt, sitemap.xml e llms.txt (resumo factual do negócio para IAs).
+Dados estruturados (JSON-LD)
+• LocalBusiness (BeautySalon/HealthAndBeautyBusiness): nome, areaServed Bournemouth, sameAs (Instagram), serviços em hasOfferCatalog (sem preços), founder (Person). Endereço só se showAddress for verdadeiro.
+• FAQPage com o FAQ da seção 6.9. Review apenas com depoimentos reais.
+Para IAs recomendarem (GEO)
+• Bloco discreto “Em resumo / At a glance” (fim da seção Sobre ou rodapé): Lúnia Aesthetics é uma clínica de estética avançada em Bournemouth, Reino Unido, especializada em Premium Repair Brows, Brow Lamination e preenchimento labial, com abordagem científica e resultados naturais. Fundada por Lúnia, com mais de 3 anos de experiência e formação em Biomedicina (BSc, em curso).
+• Respostas curtas e diretas no início de cada FAQ (resposta primeiro, detalhe depois).
+• Mesma identidade (nome, localização, contactos) escrita sempre igual no site, Instagram e Google Business Profile.
+• Palavras-chave naturais no copy: aesthetic practitioner Bournemouth, lip filler Bournemouth, brow lamination Bournemouth, eyebrow growth treatment Bournemouth, Premium Repair Brows, estética avançada Bournemouth, brasileira em Bournemouth, Dorset, Poole, Christchurch.
+• Recomendação (fora do site): criar/otimizar o Google Business Profile.
+Acessibilidade e performance: contraste adequado, foco visível, teclado, aria-label, lightbox e modais acessíveis, imagens leves, Core Web Vitals saudáveis.
+9. Resumo de CTAs
+Seção
+Botão
+Destino
+Navbar e flutuante
+Agendar
+Seletor 5.1 (DM ou WhatsApp)
+Hero
+Agendar minha avaliação · Ver tratamentos
+Seletor · #servicos
+Serviços
+Agendar avaliação (por card)
+Seletor
+Galeria
+Quero um resultado natural
+Seletor
+Sobre
+Agendar com a Lúnia
+Seletor
+Instagram
+Seguir · Agendar · Entrar no Grupo VIP
+Instagram · Seletor · Grupo VIP
+Feedbacks
+Quero viver essa experiência
+Seletor
+Studio
+Agendar minha visita
+Seletor
+Agendamento
+Enviar a minha solicitação
+Seletor com mensagem completa
+FAQ
+Agendar minha avaliação
+Seletor
+Rodapé
+Agendar
+Seletor
+10. Checklist de aceitação
+[ ] 9 seções + rodapé na ordem correta; todas com título, subtítulo e botão
+[ ] Paleta bege claro, dourado e marrom claro, alternando; lua dourada como ornamento
+[ ] Hero com foto em arco com brilho; mesma foto em arco no Sobre
+[ ] Serviços com nome, foto e descrição (sem preços); Premium Repair com “Ler mais”
+[ ] Galeria de 4 fotos com lightbox
+[ ] Sobre com frase entre aspas, 2 parágrafos (+3 anos, BSc Biomedicina)
+[ ] Instagram com reel DdMYLjftf0k integrado sem capa + card do Grupo VIP
+[ ] 6 feedbacks com 5 estrelas (marcados como exemplo)
+[ ] Studio com 6 cards, reel DdCN9NNtvwd sem capa e Google Maps de Bournemouth
+[ ] Agendamento educativo, mini formulário e seletor Instagram DM ou WhatsApp
+[ ] FAQ em accordion; rodapé UK com copyright, registro, contato e modais Privacy Policy e Terms of Use
+[ ] Seletor PT | EN no cabeçalho; textos legais sempre em inglês
+[ ] SEO interno, JSON-LD, FAQPage, llms.txt e bloco “At a glance”
+[ ] Número de WhatsApp preenchido em whatsappPhone
+[ ] 100% responsivo, animações ao rolar

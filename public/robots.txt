@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lunia-aesthetics.co.uk/sitemap.xml

@@ -1,0 +1,6 @@
+{
+  "name": "Lúnia Aesthetics",
+  "description": "Site institucional elegante e bilíngue de estética avançada, saúde da pele e sobrancelhas em Bournemouth, UK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
